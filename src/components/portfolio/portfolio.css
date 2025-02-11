@@ -1,0 +1,55 @@
+.portfolio__container {
+  width: 750px;
+  display: flex;
+  justify-content: center; /* Center the card within the container */
+}
+
+.portfolio__card {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: var(--mb-3);
+  display: flex; /* Make the card a flex container */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: center; /* Ensure text is centered */
+}
+
+.portfolio__img {
+  width: 50%;
+  height: 300px;
+  margin-bottom: var(--mb-1);
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+}
+
+.portfolio__description {
+  font-size: var(--small-font-size);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--text-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color) !important;
+}
+
+@media screen and (max-width: 992px) {
+  .portfolio__container {
+    width: initial;
+  }
+
+  .portfolio__card {
+    padding: 1.25rem 1.25rem;
+  }
+}
